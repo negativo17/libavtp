@@ -1,12 +1,11 @@
 Name:           libavtp
-Version:        0.1.0
-Release:        1%{dist}
+Version:        0.2.0
+Release:        1%{?dist}
 Summary:        Audio Video Transport Protocol (AVTP) Support Library
 License:        BSD
 URL:            https://github.com/AVnu/%{name}
 
 Source0:        %{url}/archive/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
-Patch0:         %{url}/commit/9482c1143d2bca1303c4c0eeff30674eb468d357.patch
 
 BuildRequires:  gcc-c++ 
 BuildRequires:  meson
@@ -48,5 +47,8 @@ develop applications that require %{name}.
 %{_libdir}/pkgconfig/avtp.pc
 
 %changelog
+* Thu Sep 15 2022 Simone Caronni <negativo17@gmail.com> - 0.2.0-1
+- Update to 0.2.0.
+
 * Thu Jan 14 2021 Simone Caronni <negativo17@gmail.com> - 0.1.0-1
 - First build.
